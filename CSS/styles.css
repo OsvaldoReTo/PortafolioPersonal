@@ -1,0 +1,95 @@
+body{
+    background-color: #C9F2C7;
+    margin: 3%;
+    padding: 0;
+}
+
+header{
+    background-color: #243119;
+    border-radius: 20px;
+    color: white;
+    text-align: right;
+    margin-right: 5%;
+    margin-left:5%;
+    width: 90%;
+}
+
+header img{
+    display: inline;
+    float: left;
+    margin: 6%;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+header h1{
+    display: inline-block;
+    margin-right: 10%;
+    margin-top: 10%;
+}
+
+header h2{
+    display: inline-block;
+    margin-right:10%;
+    margin-bottom: 10%;
+}
+.navbar{
+    margin:3% 5% 3% 5%;
+    display: flex;
+    width: 90%;
+    background-color: #243119;
+    flex-flow: column wrap;
+    border-radius: 20px;
+}
+
+.navbar .nav-item{
+    width: 100%;
+}
+
+.navbar .nav-item:hover{ 
+    color: white;
+
+}
+
+.navbar .nav-link{
+    color: white;
+    width: 100%;
+}
+
+h3{
+    text-align: center;
+    text-decoration: underline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+
+#sobremi{
+    background-color: #F9FEF8;
+    margin: 20px;
+    border-radius: 20px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+}
+#sobremi p{
+    display: inline-block;
+    font-size: x-large;
+    margin: 5.5%;
+}
+
+#p1{
+    text-align: right;
+    display: inline-block;
+    font-size: x-large;
+    margin:5.5%;
+}
+
+#sobremi img{
+    display: inline;
+    margin: 5%;
+    width: 270px;
+    height: 200px;
+    border-radius: 100%;
+}

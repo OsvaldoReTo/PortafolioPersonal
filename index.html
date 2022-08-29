@@ -4,33 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Osvaldo_Portafolio_Personal</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>CV Osvaldo Resendiz Tolentino</title>
 </head>
 <body>
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <!--Encabezado-->
     <header>
+        <img src="src/Foto_ORT.png" alt="Retrato">
         <h1> Osvaldo Resendiz Tolentino </h1>
-        <h3> Desarrollador Full Stack | Ingeniero Químico </h3>
-      <!--  <img src="" alt="Retrato"> -->
+        <h2> Desarrollador Full Stack | Ingeniero Químico </h2>
     </header>
-    <nav>
-       <!-- <h4>Index</h4>-->
-    </nav>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg text-black">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#sobremi">Sobre mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experiencia">Experiencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#educación">Educación</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#habilidades">Habilidades</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#proyectos">Proyectos</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+
+    <!--Cuerpo-->
+    <!--Acerca de mí-->
     <section>
-        <article>
-            <h3>Sobre mí</h3>
-          <!--  <img src="" alt="">  -->
-            <p id="paragraph1">Ayudo en temas de desarrollo front end y back end. 
-            <br> Soy un Ingeniero Químico apasionado por el área de las TI, 
-            <br> tengo un enorme gusto por aprender y desarrollarme en nuevos lenguajes.
-            <br> Conozco fundamentos de varios programas como R, Python y Fortran. 
-            <br> Pero mi más nueva experiencia es en el desarrollo FullStack 
-            <br> con el manejo de herramientas como HTML, CSS, entre otras. 
-            <br> Mi experiencia me ha permitido visualizar mis capacidades
-            <br> de trabajo en equipo y solución de problemas.
+        <h3>Sobre mí</h3>
+        <div id="sobremi">
+            <img src="src/Foto_ORT2.jpg" alt="Retrato2">
+            <p id="p1"> Mi nombre es Osvaldo, me encanta 
+                <br>    aprender y conocer nuevas cosas. 
+                <br>    A lo largo de mi vida me he enfocado 
+                <br>    a hacer varias actividades, 
+                <br>    desde adentrarme al mundo académico hasta 
+                <br>    generar contenido en redes sociales. 
             </p>
-        </article>
-        <article>
-            <h3>Experiencia</h3>
+
+            <p>      Sin embargo, he encontrado en la programación una de mis mayores pasiones, 
+                <br> me encanta entender nuevos programas y enfrentarme a nuevos retos. 
+                <br> Soy determinado en cada una de mis metas y bastante persisitente. 
+            </p>
+            <p>      Descubre conmigo un poco de mi persona, aquí tengo varios proyectos míos y 
+                <br> los que me faltan por completar, seguro los añadiré. 
+                <br> Estoy seguro de algo y es que simplemente no voy a detenerme ni una vez más en mi vida.
+            </p>
+        </div>
+        <h3>Experiencia</h3>
+        <div id="experiencia">
             <h4>Java Full Stack Developer</h4>
             <h5>Generation México Ago 2022 - presente</h5>
             <ul>
@@ -43,21 +82,22 @@
                 <li>Evaluación del potencial de vinculación de una empresa. </li>
                 <li>Se desarrolló la inteligencia de mercado con apoyo al área de Membresías.</li>
             </ul>
-        </article>
-        <article>
-            <h3>Proyectos</h3>
+        </div>
+        <h3>Educacion</h3>
+        <div id="educación">
+            <p>Aqui iran datos de educación</p>
+        </div>
+        <h3>Habilidades</h3>
+        <div id="habilidades">
+            <p>Aqui iran habilidades</p>
+        </div>
+        <h3>Proyectos</h3>
+        <div id="proyectos">
             <p>Mexishop</p>
-        </article>
-        <article>
-            <h3>Otras Actividades</h3>
-            <a href="#" alt="link hacia blog">Blog</a>
-        </article>
+        </div>
     </section>
-    <!--<aside>
-        <img src="https://cdn.pixabay.com/photo/2018/05/18/15/30/web-design-3411373_960_720.jpg" alt="Imagen Diseño Web" width="200px" height="160 px">
-    </aside>-->
     <footer>
-        <p><em>Hay que querer hasta el extremo de alcanzar el fin, todo lo demás son insignificancias</em></p>
+        <p><em>Hay que querer hasta el extremo de alcanzar el fin, todo lo demás son insignificancias. F.M. Dostoievski</em></p>
     </footer>
 </body>
 </html>

@@ -8,21 +8,18 @@
     <link rel="stylesheet" href="CSS/styles.css">
     <title>CV Osvaldo Resendiz Tolentino</title>
 </head>
-<body>
-    <!--Bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
-    <!--Encabezado-->
-    <header>
+<body class="container">
+     <!--Encabezado-->
+    <header class="container">
         <img src="src/Foto_ORT.png" alt="Retrato">
         <h1> Osvaldo Resendiz Tolentino </h1>
         <h2> Desarrollador Full Stack | Ingeniero Químico </h2>
     </header>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg text-black">
+    <div class="container">
+    <nav class="navbar navbar-expand-lg">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon" style="color: white;">Menú</span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
@@ -44,11 +41,12 @@
           </ul>
         </div>
       </nav>
-
-    <!--Cuerpo-->
-    <!--Acerca de mí-->
+    </div>
+    <!--Sección principal-->
     <section>
+        <!--Acerca de mí-->
         <h3>Sobre mí</h3>
+        <div class="container">
         <div id="sobremi">
             <img src="src/Foto_ORT2.jpg" alt="Retrato2">
             <p id="p1"> Mi nombre es Osvaldo, me encanta 
@@ -68,36 +66,92 @@
                 <br> Estoy seguro de algo y es que simplemente no voy a detenerme ni una vez más en mi vida.
             </p>
         </div>
+        </div>
+        <!--Experiencia-->
         <h3>Experiencia</h3>
+        <div class="container">
         <div id="experiencia">
-            <h4>Java Full Stack Developer</h4>
-            <h5>Generation México Ago 2022 - presente</h5>
-            <ul>
-                <li>Bootcamp para ser Desarrollador Java Full Stack.</li>
-                <li>Se desarrollan habilidades en HTML, CSS entre otros para generar una página de e-commerce.</li>
-            </ul>
-            <h4>Auxiliar de Metodología y Procesos</h4>
-            <h5>Oil and Gas Alliance, Nov 2021 - Feb 2022</h5>
-            <ul>
-                <li>Evaluación del potencial de vinculación de una empresa. </li>
-                <li>Se desarrolló la inteligencia de mercado con apoyo al área de Membresías.</li>
-            </ul>
+            <img src="./src/Oil_And_Gas_Alliance.png" alt="Logo Oil & Gas Alliance">
+            <div>
+                <h4>Auxiliar de Metodología y Procesos</h4>
+                <h5>Oil and Gas Alliance, Nov 2021 - Feb 2022</h5>
+                <ul>
+                    <li>Evaluación del potencial de vinculación de una empresa. </li>
+                    <li>Se desarrolló la inteligencia de mercado con apoyo al área de Membresías.</li>
+                </ul>
+            </div>
         </div>
+        </div>
+        <!--Educación-->
         <h3>Educacion</h3>
+        <div class="container">
         <div id="educación">
-            <p>Aqui iran datos de educación</p>
+            <img src="./src/Generation.png" alt="Logo Generation">
+            <div>
+                <h4>Java Full Stack Developer</h4>
+                <h5>Generation México Ago 2022 - presente</h5>
+                <ul>
+                    <li>Bootcamp para ser Desarrollador Java Full Stack.</li>
+                    <li>Se desarrollan habilidades en HTML,
+                    <br> CSS entre otros para generar una  
+                    <br> página de e-commerce.</li>
+                </ul>
+            </div>
+            <img src="./src/UNAM_escudo.png" alt="Logo UNAM">
+            <div>
+                <h4>Universidad Nacional 
+                   <br> Autónoma de México</h4>
+                <h5>Ingeniero Químico, 2019</h5>
+                <ul>
+                    <li>Graduado con honores</li>
+                </ul>
+            </div>
+            <img src="./src/UJaen.png" alt="Logo Universidad de Jaén">
+            <div>
+                <h4>Universidad de Jaén,
+                   <br> España</h4>
+                <h5>Programa de Intercambio, 2019</h5>
+            </div>
         </div>
+        <!--Habilidades-->
         <h3>Habilidades</h3>
+        <div class="container">
         <div id="habilidades">
-            <p>Aqui iran habilidades</p>
+            <h4>Habilidades Técnicas</h4>
+            <div>
+                <img src="./src/html5.png" alt="HTML 5">
+                <img src="./src/css.png" alt="CSS 3" style= "width: 30px;">
+            </div>
+            <h4>Habilidades Blandas</h4>
+            <div>
+                <ul>
+                    <li>Responsabilidad Personal</li>
+                    <li>Comunicación Asertiva</li>
+                    <li>Persistencia</li>
+                    <li>Trabajo en Equipo</li>
+                    <li>Creatividad</li>
+                </ul>
+            </div>
         </div>
+        </div>
+        <!--Proyectos-->
         <h3>Proyectos</h3>
-        <div id="proyectos">
-            <p>Mexishop</p>
+        <div class="container">
+            <div id="proyectos">
+                <div></div>
+                <button type="button" class="btn btn-success" a href="#">Mexishop</button>
+                <button type="button" class="btn btn-success" a href="#">Blog</button>
+            </div>
         </div>
     </section>
+    <!--Pie de página-->
     <footer>
-        <p><em>Hay que querer hasta el extremo de alcanzar el fin, todo lo demás son insignificancias. F.M. Dostoievski</em></p>
+           <em> Hay que querer hasta el extremo de alcanzar el fin, todo lo demás son insignificancias. "F.M. Dostoievski" </em>
     </footer>
+   <!--Bootstrap-->
+   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+   
 </body>
 </html>

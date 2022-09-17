@@ -82,7 +82,7 @@ if (err2>0){
 
 // Validación de correo
 
-if ((!cmail.validity.typeMismatch)
+if ((!mail.validity.typeMismatch)
     &&
     (mail.value.length >=10)
 ) {     mail.classList.remove("is-invalid")
@@ -97,7 +97,7 @@ if ((!cmail.validity.typeMismatch)
 
  // Botón Cotizar
 
-btnCotizar.addEventListener("click", function (x) {
+btnCotizar.addEventListener("click", function cotizar(x) {
     x.preventDefault();
     validar(nombre, apellidos, correo);
     cardTitle.innerHTML= `<p> Cotización para ${nombre.value} ${apellidos.value} de ${estado.value}</p>`
@@ -129,6 +129,8 @@ btnCotizar.addEventListener("click", function (x) {
     resumen.innerHTML += `<div class="alert alert-light" role="alert">
     Total: $ ${total}
   </div>`
+
+  x.target.removeEventListener(x.type, cotizar);
     
 })
 

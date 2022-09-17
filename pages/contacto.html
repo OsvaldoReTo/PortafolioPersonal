@@ -4,15 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../CSS/contacto.css">
     <title>Contacto</title>
   </head>
   <body>
-    <header class="container">
+    <header class="container d-print-none">
       <h1>Trabaja Conmigo</h1>
     </header>
 
-    <nav class="container">
+    <nav class="container d-print-none">
       <nav class="navbar navbar-expand-lg">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon" style="color: white;">Menú</span>
@@ -29,83 +30,160 @@
 
 <main class="container">
   <div class="row">
-    <div class="col-sm-12 col-xs-12 col-md-6" id="columna1">
+    <div class="col-sm-12 col-xs-12 col-md-6 d-print-none">
       <h1>Diseñando páginas web a su conveniencia</h1>
-      <img class="img-fluid" src="../src/trabajo.png" alt="libros" id="diseño">
+      <img src="../src/color.png" alt="libros" id="diseño">
+      <img src="../src/programacion.jpg" alt="libros" id="programacion">
     </div>
     <div class="col-sm-12 col-xs-12 col-md-6">
-      <h1>Por favor completa los siguientes datos y con gusto te atenderé</h1>
+      <h1 class="d-print-none">Por favor completa los siguientes datos y con gusto te atenderé</h1>
       <form>
         <div class="form-row">
-          <div class="col-md-12 mb-3">
+          <div class="col-md-12 mb-3 d-print-none">
             <label for="nombre">Nombre</label>
-            <input type="text" class="form-control is-invalid" id="nombre" value="Mark" required>
+            <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
             <div class="invalid-feedback">
-              Looks bad!
+               Introduce un nombre válido <i class="bi bi-exclamation-circle"></i>
             </div>
           </div>
-          <div class="col-md-12 mb-3">
+          <div class="col-md-12 mb-3 d-print-none">
             <label for="apellidos">Apellidos</label>
-            <input type="text" class="form-control is-invalid" id="apellidos" value="Otto" required>
+            <input type="text" class="form-control" id="apellidos" placeholder="Apellidos" required>
             <div class="invalid-feedback">
-              Looks bad!
+              Coloca tus dos apellidos e introduce apellidos válidos <i class="bi bi-exclamation-circle"></i>
             </div>
           </div>
-        </div>
-        <div class="form-row">
-          <div class="col-md-12 mb-3">
-            <label for="hora">Horas</label>
-            <input type="number" class="form-control is-invalid" id="hora" aria-describedby="validationServer03Feedback" required>
-            <div id="validationServer03Feedback" class="invalid-feedback">
-              Please provide a valid city.
+          <div class="col-md-12 mb-3 d-print-none">
+            <label for="correo">Correo</label>
+            <input type="email" class="form-control" id="correo" placeholder="correo@email.com" required>
+            <div class="invalid-feedback">
+              Introduce un correo válido <i class="bi bi-exclamation-circle"></i>
             </div>
           </div>
-          <div class="col-md-12 mb-3">
-            <label for="">Extras</label>
-            <select class="custom-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+          <div class="col-md-12 mb-3 d-print-none">
+            <label for="estado">Estado</label>
+            <select class="custom-select" id="estado" aria-describedby="estado">
               <option selected disabled value="">Seleccionar</option>
-              <option>Diseño  Gráfico</option>
-              <option>Soporte Técnico</option>
+              <option value="AGS">Aguascalientes</option>
+              <option value="BCN">Baja California</option>
+              <option value="BCS">Baja California Sur</option>
+              <option value="CAM">Campeche</option>
+              <option value="CHP">Chiapas</option>
+              <option value="CHI">Chihuahua</option>
+              <option value="CDMX">Ciudad de México</option>
+              <option value="COA">Coahuila</option>
+              <option value="COL">Colima</option>
+              <option value="DUR">Durango</option>
+              <option value="GTO">Guanajuato</option>
+              <option value="GRO">Guerrero</option>
+              <option value="HGO">Hidalgo</option>
+              <option value="JAL">Jalisco</option>
+              <option value="MEX">Estado de México</option>
+              <option value="MIC">Michoacán</option>
+              <option value="MOR">Morelos</option>
+              <option value="NAY">Nayarit</option>
+              <option value="NLE">Nuevo León</option>
+              <option value="OAX">Oaxaca</option>
+              <option value="PUE">Puebla</option>
+              <option value="QRO">Querétaro</option>
+              <option value="ROO">Quintana Roo</option>
+              <option value="SLP">San Luis Potosí;</option>
+              <option value="SIN">Sinaloa</option>
+              <option value="SON">Sonora</option>
+              <option value="TAB">Tabasco</option>
+              <option value="TAM">Tamaulipas</option>
+              <option value="TLX">Tlaxcala</option>
+              <option value="VER">Veracruz</option>
+              <option value="YUC">Yucatán</option>
+              <option value="ZAC">Zacatecas</option>
             </select>
-            <div id="validationServer04Feedback" class="invalid-feedback">
-              Please select a valid state.
+          </div>
+        <div class="row d-print-none">
+          <div class="col-6 mb-3">
+            <label for="hora">Horas</label>
+            <input type="number" class="form-control" id="hora" aria-describedby="hora" min = "0" step= "0.5" placeholder = "# horas" value="0" required>
+          </div>
+          <div class="col-1 col-lg-1 mb-3">
+          </div>
+          <div class="col-5 mb-3">
+            <div>
+              <label for="hora">Precio por hora</label>
+            </div>
+            <div>
+              <h2><span class="badge badge-success" id="precio">
+               $ 20
+              </span></h2>
             </div>
           </div>
-          <div class="col-md-12 mb-3">
-            <label for="validationServer05"></label>
-            <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
-            <div id="validationServer05Feedback" class="invalid-feedback">
-              Please provide a valid zip.
-            </div>
-          </div>
+        </div> 
         </div>
-        <div class="form-group">
+        <label for="hora d-print-none" class="d-print-none">Extras</label>
+        <div class="row d-print-none">
+        <div class="form-group col-6">
           <div class="form-check">
-            <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
-            <label class="form-check-label" for="invalidCheck3">
-              Agree to terms and conditions
+            <input class="form-check-input" type="checkbox" value="" id="check1" aria-describedby="check1">
+            <label class="form-check-label" for="check1">
+              Diseño Gráfico
             </label>
-            <div  id="invalidCheck3Feedback" class="invalid-feedback">
-              You must agree before submitting.
-            </div>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="check2" aria-describedby="check2">
+            <label class="form-check-label" for="check2">
+              Hosting
+            </label>
           </div>
         </div>
-        <button class="btn btn-primary" type="submit">Submit form</button>
+        <div class="form-group col-6">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="check3" aria-describedby="check3">
+            <label class="form-check-label" for="check3">
+              Soporte Técnico
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="check4" aria-describedby="check4">
+            <label class="form-check-label" for="check4">
+              Propaganda
+            </label>
+          </div>
+        </div>
+        </div>
+        
+        <div class="form-row">
+        </div>
+        <div class="card">
+          <h5 class="card-header">Resumen</h5>
+          <div class="card-body">
+                <div id="cardtitle"></div>
+          </div>
+          <div class="card-body">
+            <table class="table" id="cardText"></table>
+          </div>
+          <div class="card-body">
+            <button class="btn btn-outline-light" type="button" id="cotiza">
+              <i class="bi bi-currency-dollar"></i> Cotizar
+            </button>
+            <button class="btn btn-outline-light" type="button" id="imprimir">
+              <i class="bi bi-printer-fill"></i> Imprimir
+            </button>
+          </div>
+        </div>
+        <br>
+        <button class="btn btn-success" type="button" id="enviar">Enviar</button>
+        
     </form>
     </div>
   </div>
 </main>
-
 <!--Footer-->
-<footer>
+<footer class="d-print-none">
   <br>
      <em class="foot"> Hay que querer hasta el extremo de alcanzar el fin, todo lo demás son insignificancias. "F.M. Dostoievski"    </em>
   <br>
   <br>
 </footer>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../js/contacto.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

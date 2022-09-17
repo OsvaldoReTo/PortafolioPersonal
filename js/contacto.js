@@ -82,18 +82,16 @@ if (err2>0){
 
 // Validación de correo
 
-if ((!mail.validity.typeMismatch)
+if ((mail.value.length!=0)
     &&
     (mail.value.length >=10)
 ) {     mail.classList.remove("is-invalid")
         mail.classList.add("is-valid") 
 } else {
-        mail.classList.remove("is-invalid")
-        mail.classList.add("is-valid")     
+        mail.classList.remove("is-valid")
+        mail.classList.add("is-invalid")     
 }
-
 } // Función validar
-
 
  // Botón Cotizar
 
@@ -129,7 +127,6 @@ btnCotizar.addEventListener("click", function cotizar(x) {
     resumen.innerHTML += `<div class="alert alert-light" role="alert">
     Total: $ ${total}
   </div>`
-
   x.target.removeEventListener(x.type, cotizar);
     
 })
